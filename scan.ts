@@ -81,7 +81,7 @@ const rpcUrl =
   console.log(`spotted ${tokens.length} erc20 tokens`);
 
   const data: Erc20Record[] = [];
-  // Loop through all tokens with non-zero balance
+ㄋ
   for (let token of tokens) {
     const requestOptions = {
       method: "POST",
@@ -102,7 +102,6 @@ const rpcUrl =
 
     if (metadata.decimals && token.tokenBalance) {
       const balance = ethers.formatUnits(token.tokenBalance, metadata.decimals);
-      // Print name, balance, and symbol of token
 
       data.push({
         symbol: metadata.symbol || "",
